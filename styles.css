@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background: rgb(244, 244, 239);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(91, 5, 5);
+  color: white;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav .section {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+}
+
+nav .section:hover {
+  cursor: pointer;
+}
+
+.resume {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-left: 2rem;
+}
+
+.intro {
+  margin: 5rem 1rem 1rem 1rem;
+  /* margin: 1rem; */
+  /* margin-bottom: 1.5Education Sectionrem; */
+}
+
+.intro h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+.intro p {
+  margin-left: 1rem;
+  text-align: justify;
+}
+
+.intro img {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 300px;
+}
+
+hr {
+  margin: 0 0.5rem;
+}
+
+.education {
+  margin: 1rem;
+}
+
+.education h2 {
+  font-size: 2rem;
+}
+
+.education table {
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.education th {
+  font-weight: 900;
+  padding: 0.5rem;
+}
+
+.education td {
+  /* font-weight: 900; */
+  padding: 0.5rem;
+}
+
+.skills ul {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.skills ul li {
+  margin: 1rem;
+  /* list-style: none; */
+  text-align: justify;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.projects ul {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.projects ul li {
+  margin: 1rem;
+  /* list-style: none; */
+  text-align: justify;
+}
+
+.connection {
+  margin: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connection p {
+  margin: 1rem;
+}
+
+.connection h2 {
+  text-align: center;
+}
+
+.connection .email-id {
+  cursor: pointer;
+}
+
+.styled-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.styled-button {
+  width: 10rem;
+  height: 2rem;
+  background-color: rgb(91, 5, 5);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.styled-button:hover {
+  background-color: #8b0000; /* Darker shade of darkred */
+}
+
+.pop-up {
+  position: absolute;
+  /* top: -2.5rem; */
+  left: 11rem;
+  display: none;
+  border: 1px solid black;
+  width: 6rem;
+  height: 1.2rem;
+  font-size: 0.8rem;
+  background-color: rgb(91, 5, 5);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.pop-up-show {
+  position: relative;
+  bottom: 4.5rem;
+  left: 35%;
+  /* display: none; */
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+  }
+  nav .section {
+    width: 80%;
+    /* margin-top: 0625rem; */
+    padding-top: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 0rem;
+    /* margin-bottom: 1rem; */
+    /* margin-right: 1rem; */
+  }
+  .sub-section {
+    margin-left: 0.5rem;
+  }
+  .resume {
+    text-align: center;
+    margin: 0rem;
+  }
+  .pop-up {
+    display: none;
+  }
+  .pop-up-show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .section {
+    display: none;
+  }
+  body {
+    font-size: 0.75rem;
+  }
+  .intro h1,
+  .intro p {
+    text-align: justify;
+    margin: 0.5rem;
+  }
+  .github {
+    display: none;
+  }
+  .pop-up {
+    display: none;
+  }
+  .pop-up-show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  body {
+    width: 120%;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .github {
+    display: none;
+  }
+  .styled-button {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 8rem;
+  }
+  .profile-picture {
+    width: 150px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .pop-up {
+    display: none;
+  }
+  .pop-up-show {
+    display: none;
+  }
+}
